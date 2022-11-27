@@ -1,0 +1,42 @@
+#content
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    &>*
+    {
+        width: calc(30% - 50px);
+    }
+
+    .interaction
+    {
+        display: flex;
+        width: 100%;
+
+        border-radius: 30px;
+        background-color: rgba(46, 50, 60, 0.4);
+
+        padding: 20px;
+
+        &>*
+        {
+            flex: 1;
+        }
+
+        .grid
+        {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    .message
+    {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+}

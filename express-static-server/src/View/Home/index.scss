@@ -1,0 +1,88 @@
+$blur: 10px;
+
+.ellipsis
+{
+    width: 450px;
+    height: 450px;
+
+    position: fixed;
+
+    border-radius: 100%;
+
+    filter: blur($blur);
+    -o-filter: blur($blur);
+    -ms-filter: blur($blur);
+    -moz-filter: blur($blur);
+    -webkit-filter: blur($blur);
+
+    &--epsi1
+    {
+        top: -263px;
+        right: -330px;
+        background-color: var(--gradient-2);
+    }
+
+    &--epsi2
+    {
+        top: calc(100vh - 200px);
+        left: -330px;
+        background-color: var(--gradient-1);
+    }
+
+    &--epsi3
+    {
+        top: calc(100vh - 250px);
+        left: -330px;
+        background-color: var(--gradient-2);
+    }
+
+    &--epsi4
+    {
+        top: calc(100vh - 200px);
+        right: -330px;
+        background-color: var(--gradient-1);
+    }
+
+    &--epsi5
+    {
+        top: calc(100vh - 100px);
+        right: -330px;
+        background-color: var(--gradient-2);
+    }
+
+    &--epsi6
+    {
+        top: -263px;
+        left: -200px;
+        background-color: var(--gradient-1);
+    }
+
+    &--epsi7
+    {
+        top: -100px;
+        left: -330px;
+        background-color: var(--gradient-2);
+    }
+}
+
+
+#home
+{
+    padding: 10px;
+    padding-top: 50px;
+
+    #page
+    {
+        display: flex;
+        gap: 50px;
+    }
+
+    #main
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        flex: 1;
+    }
+}

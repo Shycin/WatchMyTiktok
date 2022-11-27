@@ -1,0 +1,39 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "eslint:recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        //disable linebreak if other than unix/windows main programmer
+        "linebreak-style": 0,
+
+        //allow jsx in [.js, .jsx] file
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+
+        //make space with tab
+        "indent": ["error", "tab"],
+        "no-tabs": ["error", { "allowIndentationTabs": true }],
+        "react/jsx-indent": ["error", "tab", {"checkAttributes": true, "indentLogicalExpressions":true}],
+        "react/jsx-indent-props": ["error", "tab"],
+
+        //limit code
+        "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+        "max-len": ["error", { "code": 120 }]
+    }
+}
